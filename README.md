@@ -1,7 +1,7 @@
 # 100P
 
-A digital paper notebook for the iPad. You draw with the Apple Pencil, and every page ends up
-in a PDF in your iCloud folder.
+A featureless and finite digital paper notebook for the iPad. You draw with the Apple Pencil,
+and every page ends up in a PDF in your iCloud folder.
 
 ## What you can do
 
@@ -43,3 +43,9 @@ creates a folder called "100P" there.
 7 days. Just connect the iPad and press **▶** again; your pages are kept. The PDF's physical
 scale is tuned for the iPad Pro 12.9″ (3rd generation); on other iPads the app works, but sizes
 in the PDF are not 1:1.
+
+## Disclaimer
+
+This app was built with the help of AI (Claude Code). It is provided "as is", without warranty
+of any kind. I take no responsibility for the code or for anything that happens when you use
+it. Installation is at your own risk.
