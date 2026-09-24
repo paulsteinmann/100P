@@ -10,7 +10,7 @@ and every page ends up in a PDF in your iCloud folder.
   (`100P-0002.pdf`, `100P-0003.pdf`, …) starts with a blank page.
 - **Copy a page:** tap and hold with a finger to copy a screenshot of the current page to the
   clipboard.
-- **Get your PDF:** a complete, always up-to-date PDF of your notebook is synced to the folder
+- **Access your PDF:** a complete, always up-to-date PDF of your notebook is synced to the folder
   you selected. After Reset, only the currently active notebook is accessible through the app. 
 - **Turn pages:** swipe with a finger.
 
@@ -21,6 +21,9 @@ and every page ends up in a PDF in your iCloud folder.
 - adjust anything
 - place anything
 - draw with your finger
+- type anything
+- copy and paste anything
+- do anything else
 
 ## Install (free, via cable)
 
