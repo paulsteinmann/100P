@@ -47,7 +47,7 @@ struct FolderPickerView: View {
             // Printed in the PDF caption ahead of the timestamp on every
             // page — see PDFExporter.captionText. Asked here because this
             // is the one-time first-setup screen; there's no settings UI
-            // to change it later (see CLAUDE.md — 100P has none).
+            // to change it later (100P has none).
             TextField("", text: $ownerName, prompt: Text("Dein Name").foregroundColor(.gray))
                 .font(.hundredP)
                 .foregroundColor(.black)

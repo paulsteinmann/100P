@@ -2,7 +2,7 @@ import UIKit
 import PencilKit
 
 /// The one and only drawing surface. Structurally enforces every "permanent
-/// ink" invariant from CLAUDE.md:
+/// ink" invariant:
 ///   - Pencil only (`drawingPolicy = .pencilOnly`) — finger touches never draw.
 ///   - Exactly one tool, set once, never a PKToolPicker.
 ///   - No undo/redo, via any input method.
@@ -45,7 +45,7 @@ final class HundredPCanvasView: PKCanvasView {
         // separate from `drawingPolicy`, which only gates *new* ink, not
         // editing what's already there. Found on-device: it was still very
         // much reachable despite pencil-only drawing. That directly
-        // violates "kein Verschieben" from CLAUDE.md, so strip whatever
+        // violates the "nothing can be moved" rule, so strip whatever
         // `UIInteraction`s PKCanvasView attached for it — plain touch/pencil
         // drawing isn't interaction-based, so this doesn't touch that.
         for interaction in interactions {
@@ -72,8 +72,8 @@ final class HundredPCanvasView: PKCanvasView {
     // UIMenuController and the newer UIEditMenuInteraction ask
     // `canPerformAction` for every candidate action before displaying
     // anything, so if nothing can perform, no menu appears. Ink is
-    // permanent and never becomes a target for any post-hoc edit — see
-    // CLAUDE.md's "kein Radierer, kein Lasso, ... kein Verschieben".
+    // permanent and never becomes a target for any post-hoc edit: no eraser,
+    // no lasso, no moving.
     override func canPerformAction(_ action: Selector, withSender sender: Any?) -> Bool {
         false
     }
