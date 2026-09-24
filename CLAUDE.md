@@ -98,8 +98,7 @@ und sofort nach `addPage()` und Reset. Layout pro Seite unverändert zu Noboo:
 Nur schwarz auf weiß, Menlo in `PDFExporter.liveCaptionFontSize` (wie die Info-Zeile),
 Grau ausschließlich für Deaktiviertes (Platzhalter "Dein Name", Button solange kein Name
 da ist). Zeilen sind von Hand umbrochen, maximal `FolderPickerView.maxLineLength` = 50 Zeichen. Statt eines Icons steht oben das Bild `Startup.png` (Finder-Fenster mit
-`100P` und den PDFs; Quelle `Startup.psd` liegt im Projektordner, im Asset-Katalog als
-`Startup.imageset`, 3x). Namensfeld 432pt breit, eckig, 1pt schwarzer Rahmen.
+`100P` und den PDFs; im Asset-Katalog als `Startup.imageset`, 3x). Namensfeld 432pt breit, eckig, 1pt schwarzer Rahmen.
 **Alle Buttons sind Pillen** (`PillButtonStyle`, `Views/PillButtonStyle.swift`): schwarzer
 Rahmen, schwarze Schrift auf weiß, `filled` = weiße Schrift auf schwarz, beim Drücken
 invertiert, grau nur wenn deaktiviert. Der Reset-Dialog ist deshalb KEIN `UIAlertController`
