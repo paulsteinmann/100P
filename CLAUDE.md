@@ -97,8 +97,7 @@ und sofort nach `addPage()` und Reset. Layout pro Seite unverändert zu Noboo:
 ## Setup-Screen (`FolderPickerView.swift`)
 Nur schwarz auf weiß, Menlo in `PDFExporter.liveCaptionFontSize` (wie die Info-Zeile),
 Grau ausschließlich für Deaktiviertes (Platzhalter "Dein Name", Button solange kein Name
-da ist). Zeilen sind von Hand umbrochen, maximal `FolderPickerView.maxLineLength` = 50 Zeichen
-(per Test abgesichert). Statt eines Icons steht oben das Bild `Startup.png` (Finder-Fenster mit
+da ist). Zeilen sind von Hand umbrochen, maximal `FolderPickerView.maxLineLength` = 50 Zeichen. Statt eines Icons steht oben das Bild `Startup.png` (Finder-Fenster mit
 `100P` und den PDFs; Quelle `Startup.psd` liegt im Projektordner, im Asset-Katalog als
 `Startup.imageset`, 3x). Namensfeld 432pt breit, eckig, 1pt schwarzer Rahmen.
 **Alle Buttons sind Pillen** (`PillButtonStyle`, `Views/PillButtonStyle.swift`): schwarzer
@@ -144,13 +143,10 @@ xcrun devicectl device install app --device <UDID> build/Build/Products/Debug-ip
 xcrun devicectl device process launch --device <UDID> com.example.hundredp
 ```
 
-## Build & Test
+## Build
 ```
 xcodebuild -project HundredP.xcodeproj -scheme HundredP \
-  -destination 'platform=iOS Simulator,name=<verfügbares iPad>' test
+  -destination 'platform=iOS Simulator,name=<verfügbares iPad>' build
 ```
-`DeviceScaleTests`/`PDFLayoutTests` prüfen die Maße und die Bildunterschrift,
-`NotebookRolloverTests` das 100er-Limit, den Reset (altes PDF bleibt, neues mit einer Seite,
-Seitenordner wird ersetzt) und die Nummerierung nach Neustart/Neuinstallation.
-Pencil-Zeichnen, echtes Druckgefühl, iCloud-Sync und der Reset-Dialog per Geste sind nur
-am echten Gerät verifizierbar.
+Dieses öffentliche Repo enthält bewusst keine Unit-Tests. Pencil-Zeichnen, echtes Druckgefühl,
+iCloud-Sync und der Reset-Dialog per Geste sind ohnehin nur am echten Gerät verifizierbar.
