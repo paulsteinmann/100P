@@ -11,13 +11,16 @@ and every page ends up in a PDF in your iCloud folder.
 - **Copy a page:** tap and hold with a finger to copy a screenshot of the current page to the
   clipboard.
 - **Get your PDF:** a complete, always up-to-date PDF of your notebook is synced to the folder
-  you selected.
+  you selected. After Reset, only the currently active notebook is accessible through the app. 
 - **Turn pages:** swipe with a finger.
 
 ## What you can't do
 
-Delete anything, rearrange anything, adjust anything, place anything. There is one pen, ink is
-permanent, and fingers never draw.
+- delete anything
+- rearrange anything
+- adjust anything
+- place anything
+- draw with your finger
 
 ## Install (free, via cable)
 
