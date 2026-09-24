@@ -52,3 +52,5 @@ in the PDF are not 1:1.
 This app was built with the help of AI (Claude Code). It is provided "as is", without warranty
 of any kind. I take no responsibility for the code or for anything that happens when you use
 it. Installation is at your own risk.
+
+Licensed under the [MIT License](LICENSE).
