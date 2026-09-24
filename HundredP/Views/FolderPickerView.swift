@@ -13,15 +13,15 @@ struct FolderPickerView: View {
     static let maxLineLength = 50
 
     static let titleLines = [
-        "Wähle den Speicherort für deinen 100P-Ordner",
+        "Choose a location for your 100P folder",
     ]
 
     static let introLines = [
-        "Die App legt dort selbst einen Ordner „100P“ an.",
-        "Darin liegen alle deine PDFs:",
+        "The app creates a folder called “100P” there.",
+        "All your PDFs live inside it:",
         "100P-0001.pdf, 100P-0002.pdf, …",
-        "Du erreichst sie über die Dateien-App",
-        "bzw. den Finder. Am besten wählst du iCloud.",
+        "Find them in the Files app or in Finder.",
+        "iCloud Drive is the best choice.",
     ]
 
     @ObservedObject var settings: AppSettings
@@ -48,7 +48,7 @@ struct FolderPickerView: View {
             // page — see PDFExporter.captionText. Asked here because this
             // is the one-time first-setup screen; there's no settings UI
             // to change it later (100P has none).
-            TextField("", text: $ownerName, prompt: Text("Dein Name").foregroundColor(.gray))
+            TextField("", text: $ownerName, prompt: Text("Your name").foregroundColor(.gray))
                 .font(.hundredP)
                 .foregroundColor(.black)
                 .tint(.black)
@@ -58,7 +58,7 @@ struct FolderPickerView: View {
                 .frame(maxWidth: 432)
                 .overlay(Rectangle().stroke(Color.black, lineWidth: 1))
 
-            Button("Speicherort auswählen") {
+            Button("Choose location") {
                 settings.ownerName = trimmedOwnerName
                 showDocumentPicker = true
             }

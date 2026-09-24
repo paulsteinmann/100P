@@ -10,14 +10,14 @@ struct ResetDialogView: View {
     let onReset: () -> Void
 
     static func title() -> String {
-        "\(DeviceScale.maxPagesPerNotebook) Seiten voll"
+        "\(DeviceScale.maxPagesPerNotebook) pages full"
     }
 
     static func lines(currentNumber: Int) -> [String] {
         [
-            "Reset löscht alle Seiten in der App und",
-            "beginnt PDF #\(currentNumber + 1) mit einer leeren ersten Seite.",
-            "PDF #\(currentNumber) bleibt in iCloud erhalten.",
+            "Reset deletes all pages in the app and starts",
+            "PDF #\(currentNumber + 1) with a blank first page.",
+            "PDF #\(currentNumber) stays in your 100P folder.",
         ]
     }
 
@@ -42,7 +42,7 @@ struct ResetDialogView: View {
                 }
 
                 HStack(spacing: 16) {
-                    Button("Abbrechen", action: onCancel)
+                    Button("Cancel", action: onCancel)
                         .buttonStyle(PillButtonStyle())
                     Button("Reset", action: onReset)
                         .buttonStyle(PillButtonStyle(filled: true))

@@ -2,8 +2,8 @@ import UIKit
 import SwiftUI
 import PencilKit
 
-/// Hosts one HundredPCanvasView, full-bleed (ignores safe area — "das Format
-/// ist immer so groß wie das iPad selbst").
+/// Hosts one HundredPCanvasView, full-bleed (ignores safe area — the page is
+/// always exactly as large as the iPad itself).
 final class CanvasPageViewController: UIViewController {
     let page: NotebookPage
     let canvasView: HundredPCanvasView
